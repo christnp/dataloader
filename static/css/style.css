@@ -1,0 +1,95 @@
+* {
+    font-family: "Rubik", "sans-serif";
+}
+
+div {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    color: red;
+    font-size: 40pt;
+}
+
+p {
+    font-size: 24pt;
+}
+
+/* img {
+    border-radius: 8px;
+} */
+
+body {
+    margin:25px;
+}
+
+div.polaroid {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;/* border: 3px solid #73AD21; */
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+div.container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16pt;
+    color: black;/*red;*/
+    width: 100%;
+}
+
+.tg  {
+    border-collapse:collapse;
+    border-spacing:0
+    }
+.tg td{
+    font-family:Arial, sans-serif;
+    font-size:20px;
+    overflow:hidden;
+    word-break:normal;
+}
+.tg th{
+    font-family:Arial, sans-serif;
+    font-size:20px;
+    font-weight:normal;
+    overflow:hidden;
+    word-break:normal;
+}
+.tg .tg-3z1b{
+    text-align:left;
+    vertical-align:middle; 
+    font-weight: bold;
+    }
+.tg .tg-73oq{
+    text-align:left;
+    vertical-align:middle;
+    padding-left: 10px;
+    }
+.tg .centered{
+    text-align:center;
+    vertical-align:middle;
+}
+.tg .top{
+    padding-top: 10px;
+}
+.tg .bottom{
+    padding-bottom: 10px;
+}
+.tg .middle{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.tg .input{
+    padding-left: 50px;
+    padding-right: 10px;
+}

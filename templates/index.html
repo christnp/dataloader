@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+        <title>Flask Testing</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/static/css/style.css">        
+    </head>
+    <body>
+
+
+    
+
+    <div>
+        <h1>Welcome!</h1><br>
+
+        <br>
+        <form action="/results" method="POST" enctype="multipart/form-data">
+            <div class="polaroid">
+                <h3> Set Parameters: </h3>
+            
+                    <table class="tg">
+                        <tbody>
+                        <tr>
+                            <td class="top input" >
+                                Endpoint: 
+                            </td>
+                            <td class="top input">
+                                <input name="endpoint" value="{{endpoint}}">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bottom input" >
+                                Address: 
+                            </td>
+                            <td class="bottom input">
+                                <input name="address" value="{{address}}">
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+            </div>
+
+            <div class="polaroid">
+                <h3> Chose Dataset: </h3>
+                <table class="tg">
+                    <tbody>
+                    <tr>
+                        <td class="top bottom input" >
+                            <input type="file" name="dataset">
+                            <!-- <img id="target" src="#" alt="target dataset" /> -->
+                        </td>
+                        <td class="centered top">
+                            <input type="submit" value="Load" disabled="true">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div id="preview" class="container">
+                    
+                </div>
+            </div>
+        </form>
+
+        <br>
+        <div> 
+            <h3>{{ error }}</h3>
+        </div>
+
+    </div>
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <!-- <script src="/static/js/image.preview-0.0.1.js" charset="utf-8"></script> -->
+        <script type=text/javascript src="{{
+            url_for('static', filename='js/image.preview-0.0.1.js') }}"></script>
+    </body>
+</html>

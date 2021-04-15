@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+        <title>Flask Testing - Results</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/static/css/style.css">        
+    </head>
+    <body>
+
+
+    <div>
+
+        <h1>Results</h1><br>
+        <a href="{{ url_for('index') }}">Return</a> <br>
+
+        <p></p>
+        <div class="polaroid">
+            <img src="{{ dataset_path }}?v={{ dataset_version }}" alt="{{ dataset_path }}">
+            <div class="container">
+                <!-- Dataset: {{ dataset }}
+                Class:   {{ class_name }}<br>
+                ClassID: {{class_id}}<br> -->
+                <table class="tg">
+                    <thead>
+                    <tr>
+                        <th class="tg-3z1b top">Dataset:</th>
+                        <th class="tg-73oq top">{{ dataset_name }}</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="tg-3z1b middle">Class:</td>
+                        <td class="tg-73oq middle">{{ class_name }}</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-3z1b bottom">ClassID:</td>
+                        <td class="tg-73oq bottom">{{ class_id }}</td>
+                    </tr>
+                    </tbody>
+                    </table>
+            </div>
+        </div>
+    </div>
+</html>
